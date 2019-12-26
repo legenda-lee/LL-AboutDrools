@@ -28,7 +28,7 @@ public class PointRuleEngineImpl implements PointRuleEngine {
     public void initEngine() {
         // 设置时间格式
         System.setProperty("drools.dateformat", "yyyy-MM-dd HH:mm:ss");
-        ruleBase = RuleBaseFactory.getRuleBase();
+        ruleBase = RuleBaseSingleton.getRuleBase();
 
         try {
             PackageBuilder backageBuilder = getPackageBuilderFromDrlFile();
@@ -44,7 +44,7 @@ public class PointRuleEngineImpl implements PointRuleEngine {
 
     @Override
     public void refreshEngineRule() {
-        ruleBase = RuleBaseFactory.getRuleBase();
+        ruleBase = RuleBaseSingleton.getRuleBase();
         org.drools.rule.Package[] packages = ruleBase.getPackages();
 
         for (org.drools.rule.Package pg : packages) {
@@ -127,12 +127,12 @@ public class PointRuleEngineImpl implements PointRuleEngine {
 
 
     public static void main(String[] args) throws IOException {
+        System.out.println("请输入命令：");
         PointRuleEngine pointRuleEngine = new PointRuleEngineImpl();
         while (true) {
             InputStream is = System.in;
             BufferedReader br = new BufferedReader(new InputStreamReader(is));
             String input = br.readLine();
-            System.out.println("请输入命令：");
             if (null != input && "s".equals(input)) {
                 System.out.println("初始化规则引擎...");
                 pointRuleEngine.initEngine();
