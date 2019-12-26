@@ -6,7 +6,7 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.2.1.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath/>
     </parent>
     <groupId>com.legenda.lee</groupId>
     <artifactId>study-drools</artifactId>
@@ -25,6 +25,7 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+        <!-- drools 5.2.0.M2 -->
         <dependency>
             <groupId>org.drools</groupId>
             <artifactId>drools-core</artifactId>
@@ -37,11 +38,21 @@
             <version>5.2.0.M2</version>
         </dependency>
 
-        <dependency>
-            <groupId>com.thoughtworks.xstream</groupId>
-            <artifactId>xstream</artifactId>
-            <version>1.3.1</version>
-        </dependency>
+
+        <!-- drools 6.4.0.Final 经测试，本demo对此版本不适用-->
+<!--        <dependency>-->
+<!--            <groupId>org.drools</groupId>-->
+<!--            <artifactId>drools-core</artifactId>-->
+<!--            <version>6.4.0.Final</version>-->
+<!--        </dependency>-->
+
+<!--        <dependency>-->
+<!--            <groupId>org.drools</groupId>-->
+<!--            <artifactId>drools-compiler</artifactId>-->
+<!--            <version>6.4.0.Final</version>-->
+<!--        </dependency>-->
+
+
 
 
 

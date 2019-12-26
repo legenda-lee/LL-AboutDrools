@@ -29,16 +29,6 @@
 
         </dependency> 
 
-        <dependency> 
-
-            <groupId>com.thoughtworks.xstream</groupId> 
-
-            <artifactId>xstream</artifactId> 
-
-            <version>1.3.1</version> 
-
-        </dependency> 
-
 </dependencies> 
 
 我们假定如下情景：网站伴随业务产生而进行的积分发放操作。比如支付宝信用卡还款奖励积分等。 
