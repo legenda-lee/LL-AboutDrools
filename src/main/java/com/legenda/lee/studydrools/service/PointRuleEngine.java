@@ -4,7 +4,7 @@ import com.legenda.lee.studydrools.fact.PointDomain;
 
 /**
  * 接下来定义一个定义积分规则接口，里面包含了初始化RuleBase、workingMemory以及执行规则的方法。
- *
+ * <p>
  * PointRuleEngine.java
  *
  * @author Legenda-Lee
@@ -17,17 +17,18 @@ public interface PointRuleEngine {
     /**
      * 初始化规则引擎
      */
-    public void initEngine();
+    void initEngine();
 
     /**
      * 刷新规则引擎中的规则
      */
-    public void refreshEngineRule();
+    void refreshEngineRule();
 
     /**
      * 执行规则引擎
+     *
      * @param pointDomain 积分Fact
      */
-    public void executeRuleEngine(final PointDomain pointDomain);
+    void executeRuleEngine(final PointDomain pointDomain);
 
 }
