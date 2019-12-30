@@ -39,47 +39,6 @@
         </dependency>
 
 
-        <!-- drools 6.4.0.Final 经测试，本demo对此版本不适用-->
-<!--        <dependency>-->
-<!--            <groupId>org.drools</groupId>-->
-<!--            <artifactId>drools-core</artifactId>-->
-<!--            <version>6.4.0.Final</version>-->
-<!--        </dependency>-->
-
-<!--        <dependency>-->
-<!--            <groupId>org.drools</groupId>-->
-<!--            <artifactId>drools-compiler</artifactId>-->
-<!--            <version>6.4.0.Final</version>-->
-<!--        </dependency>-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
